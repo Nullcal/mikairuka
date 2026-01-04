@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper, .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.svg-wrapper {
+    width: 72%;
+    max-width: 960px;
+    height: auto;
+}
+
+.svg-wrapper svg {
+    width: 100%;
+    height: auto;
+}
+
+.mika-text {
+    fill: #103251;
+    transform-box: fill-box;
+    transform-origin: center center;
+    transition-duration: .2s;
+}
+.mika-text:hover {
+    fill: #316ea8;
+    transform: scale(1.2);
+}
+
+.mika {
+    transform-box: fill-box;
+    transform-origin: center center;
+    transition-duration: .2s;
+}
+.mika:hover {
+    /*transform: scale(1.1);*/
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: rotate(-0.5deg);
+  }
+  20%, 80% {
+    transform: rotate(1deg);
+  }
+  30%, 50%, 70% {
+    transform:  rotate(-2deg);
+  }
+  40%, 60% {
+    transform: rotate(2deg);
+  }
+}
